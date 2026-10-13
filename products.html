@@ -6,387 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Our Products | HydroSpring Waters</title>
+  <meta name="description" content="Explore HydroSpring Waters 500 ml bottled water, standard labels and customised labels. Request a quotation for your order.">
 
-  <meta name="description"
-    content="Discover HydroSpring Waters 500 ml bottled water, with standard and customised label options. Request a quotation for your order.">
-
-  <style>
-    :root {
-      --navy: #082b4c;
-      --blue: #087fc1;
-      --sky: #eaf7ff;
-      --white: #ffffff;
-      --text: #263746;
-      --muted: #647789;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      color: var(--text);
-      line-height: 1.6;
-      background: var(--white);
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    header {
-      background: var(--white);
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      border-bottom: 1px solid #e2edf4;
-    }
-
-    .brand {
-      color: var(--navy);
-      font-size: 23px;
-      font-weight: bold;
-    }
-
-    .brand span {
-      color: var(--blue);
-    }
-
-    nav {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: var(--navy);
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: var(--blue);
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #082b4c, #087fc1);
-      color: var(--white);
-      text-align: center;
-      padding: 75px 20px;
-    }
-
-    .hero .eyebrow {
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 12px;
-      margin-bottom: 14px;
-      color: #c7ecff;
-    }
-
-    .hero h1 {
-      font-size: clamp(34px, 5vw, 52px);
-      line-height: 1.15;
-      margin-bottom: 18px;
-    }
-
-    .hero p {
-      max-width: 650px;
-      margin: 0 auto 25px;
-      color: #eef9ff;
-    }
-
-    .button {
-      display: inline-block;
-      background: var(--blue);
-      color: var(--white);
-      padding: 13px 22px;
-      border-radius: 7px;
-      font-weight: bold;
-      margin: 5px;
-      transition: 0.2s;
-    }
-
-    .button:hover {
-      opacity: 0.88;
-      transform: translateY(-1px);
-    }
-
-    .button.light {
-      background: var(--white);
-      color: var(--navy);
-    }
-
-    section {
-      padding: 55px 7%;
-    }
-
-    .section-heading {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .section-heading h2 {
-      color: var(--navy);
-      font-size: 30px;
-      margin-bottom: 8px;
-    }
-
-    .section-heading p {
-      color: var(--muted);
-    }
-
-    .product-card {
-      max-width: 920px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      border: 1px solid #dceaf3;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 12px 35px rgba(8, 43, 76, 0.08);
-    }
-
-    .product-visual {
-      min-height: 340px;
-      background: linear-gradient(160deg, #eaf7ff, #c8eaff);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 25px;
-      text-align: center;
-    }
-
-    .bottle {
-      width: 100px;
-      height: 220px;
-      position: relative;
-      border: 3px solid #8ac9e9;
-      border-radius: 24px 24px 17px 17px;
-      background: linear-gradient(
-        90deg,
-        rgba(255,255,255,.75),
-        rgba(100,196,239,.3),
-        rgba(255,255,255,.8)
-      );
-      box-shadow: 8px 12px 18px rgba(8,43,76,.12);
-      margin-bottom: 18px;
-    }
-
-    .bottle::before {
-      content: "";
-      position: absolute;
-      width: 38px;
-      height: 25px;
-      top: -27px;
-      left: 28px;
-      border-radius: 6px 6px 2px 2px;
-      background: #087fc1;
-      border: 2px solid #066ca5;
-    }
-
-    .bottle-label {
-      position: absolute;
-      top: 77px;
-      left: -3px;
-      width: 100px;
-      padding: 12px 3px;
-      color: white;
-      background: #087fc1;
-      font-size: 12px;
-      font-weight: bold;
-      line-height: 1.35;
-      border-top: 3px solid white;
-      border-bottom: 3px solid white;
-    }
-
-    .product-visual p {
-      color: var(--navy);
-      font-size: 14px;
-    }
-
-    .product-info {
-      padding: 35px;
-      align-self: center;
-    }
-
-    .tag {
-      display: inline-block;
-      background: var(--sky);
-      color: var(--blue);
-      padding: 5px 12px;
-      border-radius: 20px;
-      font-size: 12px;
-      font-weight: bold;
-      margin-bottom: 14px;
-    }
-
-    .product-info h3 {
-      font-size: 29px;
-      color: var(--navy);
-      margin-bottom: 12px;
-    }
-
-    .product-info p {
-      margin-bottom: 17px;
-    }
-
-    .features {
-      list-style: none;
-      margin-bottom: 22px;
-    }
-
-    .features li {
-      padding: 7px 0;
-      border-bottom: 1px solid #edf2f6;
-    }
-
-    .features li::before {
-      content: "✓ ";
-      color: var(--blue);
-      font-weight: bold;
-    }
-
-    .options {
-      background: var(--sky);
-    }
-
-    .option-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-      max-width: 920px;
-      margin: 0 auto;
-    }
-
-    .option {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      border: 1px solid #dceaf3;
-    }
-
-    .option h3 {
-      color: var(--navy);
-      margin-bottom: 10px;
-    }
-
-    .option p {
-      color: var(--muted);
-      margin-bottom: 15px;
-    }
-
-    .quote {
-      text-align: center;
-      background: var(--navy);
-      color: white;
-    }
-
-    .quote h2 {
-      font-size: 30px;
-      margin-bottom: 12px;
-    }
-
-    .quote p {
-      max-width: 650px;
-      margin: 0 auto 20px;
-      color: #e2f3ff;
-    }
-
-    footer {
-      background: #041b30;
-      color: white;
-      text-align: center;
-      padding: 28px 15px;
-      font-size: 14px;
-    }
-
-    footer p {
-      margin: 5px 0;
-    }
-
-    footer a {
-      color: #a8e1ff;
-    }
-
-    @media (max-width: 700px) {
-      header {
-        justify-content: center;
-        text-align: center;
-      }
-
-      nav {
-        justify-content: center;
-        gap: 12px;
-      }
-
-      .hero {
-        padding: 55px 20px;
-      }
-
-      .product-card {
-        grid-template-columns: 1fr;
-      }
-
-      .product-visual {
-        min-height: 300px;
-      }
-
-      .product-info {
-        padding: 25px;
-      }
-
-      .option-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <header>
+  <header class="site-header">
     <a class="brand" href="index.html">
       HydroSpring <span>Waters</span>
     </a>
 
-    <nav aria-label="Main navigation">
+    <nav class="navigation">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
+      <a href="index.html#about">About Us</a>
       <a href="index.html#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <p class="eyebrow">Discover HydroSpring Waters</p>
+    <section class="hero products-hero">
+      <div class="hero-content">
+        <p class="eyebrow">OUR PRODUCT RANGE</p>
 
-      <h1>Refreshment With Your Brand</h1>
+        <h1>HydroSpring Waters</h1>
 
-      <p>
-        Explore our 500 ml bottled water, available with standard
-        labels or customised labels for your business, event or organisation.
-      </p>
+        <p>
+          500 ml bottled water with standard or customised
+          label options for businesses, organisations and events.
+        </p>
 
-      <a class="button light"
-         href="#our-products">Explore Our Product</a>
-
-      <a class="button"
-         href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20to%20request%20a%20quotation.">
-        Request a Quotation
-      </a>
+        <a class="button button-light" href="#our-products">
+          Explore Our Product
+        </a>
+      </div>
     </section>
 
-    <section id="our-products">
+    <section class="section" id="our-products">
       <div class="section-heading">
-        <h2>Our Product</h2>
-        <p>A convenient bottled-water option for everyday needs and special occasions.</p>
+        <p class="eyebrow blue-text">BOTTLED WATER</p>
+        <h2>Our 500 ml Bottle</h2>
+
+        <p>
+          Get in touch to discuss your quantity, label preference
+          and delivery requirements.
+        </p>
       </div>
 
       <div class="product-card">
@@ -394,111 +59,128 @@
           <div class="bottle" role="img"
                aria-label="Illustration of a HydroSpring Waters bottle">
             <div class="bottle-label">
-              HYDROSPRING<br>WATERS
+              HYDROSPRING<br>
+              WATERS
             </div>
           </div>
-          <p>Product illustration — replace with your actual bottle photo.</p>
+
+          <p class="visual-caption">
+            Bottle illustration. Replace with an actual product photo when available.
+          </p>
         </div>
 
         <div class="product-info">
-          <span class="tag">500 ml bottled water</span>
+          <span class="product-tag">500 ml</span>
 
-          <h3>HydroSpring Waters</h3>
+          <h3>HydroSpring Bottled Water</h3>
 
           <p>
-            A handy bottle size for meetings, hospitality,
-            celebrations, conferences and everyday refreshment.
+            Suitable for meetings, hospitality, conferences,
+            church gatherings, celebrations and everyday needs.
           </p>
 
-          <ul class="features">
+          <ul class="feature-list">
             <li>500 ml bottle size</li>
-            <li>Standard label option</li>
-            <li>Customised label option</li>
-            <li>Bulk-order enquiries welcome</li>
-            <li>Quotation based on your requirements</li>
+            <li>Standard HydroSpring label</li>
+            <li>Customised label enquiries</li>
+            <li>Bulk-order quotations</li>
           </ul>
 
+          <p class="price-note">
+            Pricing: Request a quotation
+          </p>
+
           <a class="button"
-             href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20please%20send%20me%20a%20quotation%20for%20500%20ml%20bottled%20water.">
-            Get a Price Quotation
+             href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20a%20quotation%20for%20500%20ml%20bottled%20water.%20My%20required%20quantity%20is%3A">
+            Request a Quotation
           </a>
         </div>
       </div>
     </section>
 
-    <section class="options">
+    <section class="section options-section">
       <div class="section-heading">
+        <p class="eyebrow blue-text">PERSONALISE YOUR ORDER</p>
         <h2>Choose Your Label</h2>
-        <p>Tell us what you need and we will discuss the available options.</p>
+
+        <p>
+          Contact us to discuss which option suits your needs.
+        </p>
       </div>
 
-      <div class="option-grid">
-        <div class="option">
+      <div class="feature-grid">
+        <article class="feature-card label-card">
+          <div class="feature-icon">💧</div>
+
           <h3>Standard Labels</h3>
+
           <p>
-            Choose our standard HydroSpring Waters branding
+            Choose the standard HydroSpring Waters branding
             for your bottled-water order.
           </p>
 
           <a class="button"
-             href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20am%20interested%20in%20500%20ml%20bottles%20with%20standard%20labels.%20Please%20send%20a%20quotation.">
-            Enquire Now
+             href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20please%20send%20me%20a%20quotation%20for%20500%20ml%20bottles%20with%20standard%20labels.">
+            Enquire About Standard Labels
           </a>
-        </div>
+        </article>
 
-        <div class="option">
+        <article class="feature-card label-card">
+          <div class="feature-icon">🏷️</div>
+
           <h3>Customised Labels</h3>
+
           <p>
-            Ask about personalised bottle labels for your company,
+            Ask about personalised labels for your business,
             church, wedding, conference or special event.
           </p>
 
           <a class="button"
              href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20a%20quotation%20for%20500%20ml%20bottles%20with%20customised%20labels.%20Please%20advise%20on%20minimum%20order%20quantity.">
-            Custom Label Enquiry
+            Enquire About Custom Labels
           </a>
-        </div>
+        </article>
       </div>
     </section>
 
-    <section class="quote">
-      <h2>Planning an Order?</h2>
+    <section class="contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S PLAN YOUR ORDER</p>
+        <h2>Need Bottled Water for an Event?</h2>
 
-      <p>
-        Contact us with your preferred label, quantity and delivery area.
-        We will discuss your requirements and provide a quotation.
-      </p>
+        <p>
+          Send us your quantity, label preference and delivery
+          area to request a quotation.
+        </p>
 
-      <a class="button light"
-         href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20to%20request%20a%20quotation.%20My%20required%20quantity%20is%3A">
-        Request Your Quotation
-      </a>
-
-      <p style="margin-top:18px;">
-        Prefer email?
-        <a href="mailto:hydrospringwaters@gmail.com"
-           style="color:#a8e1ff;">
-          hydrospringwaters@gmail.com
+        <a class="button button-light"
+           href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20to%20request%20a%20quotation.%20Quantity%3A%20%20Label%20preference%3A%20%20Delivery%20area%3A">
+          Start Your Enquiry
         </a>
-      </p>
+
+        <p class="contact-detail">
+          Email: hydrospringwaters@gmail.com
+        </p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p><strong>HydroSpring Waters</strong></p>
-    <p>Thank you for considering us for your bottled-water needs.</p>
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      HydroSpring <span>Waters</span>
+    </a>
+
+    <p>Refreshment for every occasion.</p>
+
     <p>
-      WhatsApp:
       <a href="https://wa.me/27814799675">+27 814 799 675</a>
-    </p>
-    <p>
-      Email:
+      |
       <a href="mailto:hydrospringwaters@gmail.com">
         hydrospringwaters@gmail.com
       </a>
     </p>
+
     <p>&copy; 2026 HydroSpring Waters. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
