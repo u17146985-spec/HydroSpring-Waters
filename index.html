@@ -5,470 +5,150 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>HydroSpring Waters | Pure Refreshment</title>
-  <meta name="description" content="Discover HydroSpring Waters for bottled water enquiries, business supplies, bulk orders and events. Contact us for pricing.">
+  <title>HydroSpring Waters | Refreshment You Can Trust</title>
+  <meta name="description" content="Discover HydroSpring Waters 500 ml bottled water with standard and customised label options. Contact us for quotations and bulk orders.">
 
-  <meta name="theme-color" content="#07345b">
-
-  <style>
-    :root {
-      --navy: #07345b;
-      --blue: #087fc1;
-      --sky: #eaf7ff;
-      --white: #ffffff;
-      --text: #243b50;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      line-height: 1.7;
-      background: var(--white);
-    }
-
-    a {
-      transition: 0.2s ease;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 18px 7%;
-      background: var(--white);
-      box-shadow: 0 2px 14px #07345b12;
-    }
-
-    .brand {
-      color: var(--navy);
-      font-size: 23px;
-      font-weight: 800;
-      letter-spacing: -0.7px;
-      text-decoration: none;
-    }
-
-    .brand span {
-      color: var(--blue);
-    }
-
-    nav {
-      display: flex;
-      gap: 22px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: var(--navy);
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    nav a:hover {
-      color: var(--blue);
-    }
-
-    .hero {
-      padding: 100px 7%;
-      background:
-        radial-gradient(circle at 85% 20%, #b9e5ff 0, transparent 30%),
-        linear-gradient(125deg, #eaf7ff, #ffffff 60%, #d7efff);
-      text-align: center;
-    }
-
-    .eyebrow {
-      color: var(--blue);
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 12px;
-      font-weight: 800;
-      margin-bottom: 16px;
-    }
-
-    h1 {
-      max-width: 850px;
-      margin: 0 auto 20px;
-      color: var(--navy);
-      font-size: clamp(38px, 6vw, 68px);
-      line-height: 1.1;
-      letter-spacing: -2px;
-    }
-
-    .hero p {
-      max-width: 640px;
-      margin: 0 auto 30px;
-      font-size: 17px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 13px 24px;
-      border-radius: 7px;
-      background: var(--blue);
-      color: var(--white);
-      text-decoration: none;
-      font-weight: 700;
-      border: 1px solid var(--blue);
-      margin: 5px;
-    }
-
-    .button:hover {
-      background: var(--navy);
-      border-color: var(--navy);
-      transform: translateY(-1px);
-    }
-
-    .button-outline {
-      background: transparent;
-      color: var(--navy);
-      border-color: var(--blue);
-    }
-
-    .button-outline:hover {
-      color: var(--white);
-    }
-
-    section {
-      padding: 75px 7%;
-      scroll-margin-top: 20px;
-    }
-
-    .section-heading {
-      text-align: center;
-      margin-bottom: 38px;
-    }
-
-    h2 {
-      color: var(--navy);
-      font-size: clamp(28px, 4vw, 40px);
-      line-height: 1.2;
-      margin-bottom: 12px;
-    }
-
-    .section-heading > p:last-child {
-      max-width: 650px;
-      margin: auto;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 22px;
-    }
-
-    .card {
-      padding: 30px 24px;
-      border: 1px solid #dcebf5;
-      border-radius: 14px;
-      background: var(--white);
-      box-shadow: 0 8px 28px #07345b08;
-    }
-
-    .card-icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 58px;
-      height: 58px;
-      border-radius: 14px;
-      background: var(--sky);
-      font-size: 29px;
-      margin-bottom: 18px;
-    }
-
-    h3 {
-      color: var(--navy);
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      font-size: 15px;
-    }
-
-    .about {
-      background: var(--sky);
-    }
-
-    .about-inner {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .about-inner p {
-      margin-bottom: 16px;
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    .contact-panel {
-      max-width: 800px;
-      margin: auto;
-      padding: 45px 25px;
-      border-radius: 18px;
-      background: var(--navy);
-      color: var(--white);
-    }
-
-    .contact-panel h2 {
-      color: var(--white);
-    }
-
-    .contact-panel p {
-      margin-bottom: 22px;
-    }
-
-    .contact-details {
-      margin: 20px 0;
-      overflow-wrap: anywhere;
-    }
-
-    .contact-details a {
-      color: #bce8ff;
-      text-decoration: none;
-    }
-
-    .contact-details a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      padding: 28px 7%;
-      background: #052743;
-      color: #e2f2ff;
-      text-align: center;
-      font-size: 13px;
-    }
-
-    footer p {
-      margin: 4px 0;
-    }
-
-    @media (max-width: 700px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      nav {
-        justify-content: center;
-        gap: 12px 18px;
-      }
-
-      .hero {
-        padding: 70px 6%;
-      }
-
-      section {
-        padding: 55px 6%;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-panel {
-        padding: 35px 18px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <header>
-    <a href="#home" class="brand">
-      Hydro<span>Spring</span> Waters
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      HydroSpring <span>Waters</span>
     </a>
 
-    <nav aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="#products">Products & Services</a>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
       <a href="#about">About Us</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO HYDROSPRING WATERS</p>
 
-    <!-- HOMEPAGE HERO -->
-    <section class="hero" id="home">
-      <p class="eyebrow">Welcome to HydroSpring Waters</p>
-
-      <h1>Pure Refreshment.<br>Every Drop Matters.</h1>
-
-      <p>
-        Your partner for bottled water enquiries, business supplies
-        and refreshment for special occasions. Contact us to discuss
-        your water needs and request a quotation.
-      </p>
-
-      <a class="button"
-         href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20to%20enquire%20about%20your%20bottled%20water%20and%20pricing."
-         target="_blank"
-         rel="noopener noreferrer">
-        Enquire on WhatsApp
-      </a>
-
-      <a class="button button-outline" href="#products">
-        Explore Our Services
-      </a>
-    </section>
-
-    <!-- PRODUCTS AND SERVICES -->
-    <section id="products">
-      <div class="section-heading">
-        <p class="eyebrow">What We Offer</p>
-        <h2>Refreshment for Every Occasion</h2>
-        <p>
-          Whether you need bottled water for personal use, your business
-          or an event, get in touch to discuss your requirements.
-        </p>
-      </div>
-
-      <div class="cards">
-
-        <article class="card">
-          <div class="card-icon" aria-hidden="true">💧</div>
-          <h3>Bottled Water</h3>
-          <p>
-            Enquire about our bottled water, available sizes,
-            packaging options and quantities.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon" aria-hidden="true">🏢</div>
-          <h3>Business Supply</h3>
-          <p>
-            Discuss bottled water requirements for offices, guest houses,
-            gyms, restaurants and other businesses.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon" aria-hidden="true">🎉</div>
-          <h3>Events & Functions</h3>
-          <p>
-            Enquire about water supplies for meetings, conferences,
-            celebrations and special occasions.
-          </p>
-        </article>
-
-      </div>
-
-      <div style="text-align:center; margin-top:35px;">
-        <a class="button"
-           href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20please%20send%20me%20information%20about%20your%20products%20and%20bulk%20order%20prices."
-           target="_blank"
-           rel="noopener noreferrer">
-          Request Product Information
-        </a>
-      </div>
-    </section>
-
-    <!-- ABOUT US -->
-    <section class="about" id="about">
-      <div class="about-inner">
-        <p class="eyebrow">Get to Know Us</p>
-        <h2>Meet HydroSpring Waters</h2>
+        <h1>Refreshment for Every Occasion</h1>
 
         <p>
-          At HydroSpring Waters, we aim to make bottled water enquiries
-          straightforward for individuals, businesses and event organisers.
+          Discover our 500 ml bottled water, with standard and
+          customised label options for businesses, churches,
+          events and everyday needs.
         </p>
 
-        <p>
-          From everyday requirements to larger event and business orders,
-          contact us to discuss availability, quantities and pricing.
-        </p>
+        <div class="button-group">
+          <a class="button button-light" href="products.html">
+            Explore Our Products
+          </a>
 
-        <a class="button"
-           href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20business."
-           target="_blank"
-           rel="noopener noreferrer">
-          Contact Our Team
-        </a>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-      <div class="contact-panel">
-        <p class="eyebrow" style="color:#8ed8ff;">
-          Get in Touch
-        </p>
-
-        <h2>Let's Talk About Your Water Needs</h2>
-
-        <p>
-          Need bottled water for your business, an event or personal use?
-          Contact us to enquire about our products and request pricing.
-        </p>
-
-        <a class="button"
-           href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20to%20make%20an%20enquiry."
-           target="_blank"
-           rel="noopener noreferrer">
-          Chat with Us on WhatsApp
-        </a>
-
-        <a class="button button-outline"
-           href="mailto:hydrospringwaters@gmail.com?subject=HydroSpring%20Waters%20Enquiry">
-          Email Our Business
-        </a>
-
-        <div class="contact-details">
-          <p>
-            <strong>WhatsApp:</strong>
-            <a href="https://wa.me/27814799675"
-               target="_blank"
-               rel="noopener noreferrer">
-              +27 81 479 9675
-            </a>
-          </p>
-
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:hydrospringwaters@gmail.com">
-              hydrospringwaters@gmail.com
-            </a>
-          </p>
+          <a class="button button-outline"
+             href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20to%20request%20a%20quotation.">
+            Request a Quotation
+          </a>
         </div>
       </div>
     </section>
 
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow blue-text">ABOUT OUR BUSINESS</p>
+        <h2>Meet HydroSpring Waters</h2>
+
+        <p>
+          We offer bottled-water options for customers looking
+          for convenient refreshment and personalised branding.
+          Contact us to discuss your requirements.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">💧</div>
+          <h3>500 ml Bottled Water</h3>
+          <p>
+            A convenient bottle size for meetings, hospitality,
+            gatherings and special occasions.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🏷️</div>
+          <h3>Customised Labels</h3>
+          <p>
+            Ask about personalised bottle labels for your
+            business, church or event.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3>Bulk Enquiries</h3>
+          <p>
+            Tell us your required quantity and delivery area
+            so we can prepare a suitable quotation.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section product-preview">
+      <div class="section-heading">
+        <p class="eyebrow blue-text">OUR PRODUCT</p>
+        <h2>Discover Our 500 ml Bottles</h2>
+
+        <p>
+          Choose standard HydroSpring branding or enquire
+          about customised labels for your occasion.
+        </p>
+
+        <a class="button" href="products.html">
+          View Products
+        </a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S TALK</p>
+        <h2>Request Your Quotation</h2>
+
+        <p>
+          Contact us with your preferred label, quantity
+          and delivery location.
+        </p>
+
+        <div class="button-group centered">
+          <a class="button button-light"
+             href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20please%20help%20me%20with%20a%20quotation.">
+            WhatsApp Us
+          </a>
+
+          <a class="button button-outline"
+             href="mailto:hydrospringwaters@gmail.com">
+            Email Us
+          </a>
+        </div>
+
+        <p class="contact-detail">
+          WhatsApp: +27 814 799 675
+        </p>
+
+        <p class="contact-detail">
+          Email: hydrospringwaters@gmail.com
+        </p>
+      </div>
+    </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <p><strong>HydroSpring Waters</strong></p>
-    <p>Pure Refreshment. Every Drop Matters.</p>
-    <p>
-      &copy; <span id="year"></span> HydroSpring Waters.
-      All rights reserved.
-    </p>
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      HydroSpring <span>Waters</span>
+    </a>
+
+    <p>Thank you for considering HydroSpring Waters.</p>
+    <p>&copy; 2026 HydroSpring Waters. All rights reserved.</p>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
-
 </body>
 </html>
-
