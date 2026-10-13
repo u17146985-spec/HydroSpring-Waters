@@ -507,3 +507,418 @@ img {
     padding: 45px 6%;
   }
 }
+```css
+/* =========================================
+   HYDROSPRING WATERS PRODUCTS PAGE
+   ========================================= */
+
+.products-hero {
+  padding: 85px 20px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #062b59, #0879bd);
+}
+
+.products-hero h1 {
+  margin: 10px 0 16px;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+}
+
+.products-hero p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  line-height: 1.8;
+}
+
+.products-hero .eyebrow,
+.products-cta .eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.products-section,
+.benefits-section {
+  padding: 75px 20px;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 10px 0 15px;
+  color: #082d59;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.section-heading p {
+  line-height: 1.8;
+}
+
+.eyebrow {
+  color: #0879bd;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.product-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e1ebf4;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(7, 43, 83, 0.08);
+}
+
+.product-visual {
+  padding: 30px;
+  background: #f0f7fc;
+  text-align: center;
+}
+
+.product-photo {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: 340px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin: 0 auto 16px;
+}
+
+.visual-caption {
+  margin: 0;
+  color: #42617c;
+  font-size: 0.9rem;
+}
+
+.product-info {
+  padding: 28px;
+}
+
+.product-tag {
+  display: inline-block;
+  padding: 7px 12px;
+  color: #075c9c;
+  background: #e4f3ff;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.product-info h3 {
+  margin: 17px 0 12px;
+  color: #082d59;
+  font-size: 1.45rem;
+}
+
+.product-info p,
+.product-features {
+  color: #526579;
+  line-height: 1.8;
+}
+
+.product-features {
+  padding-left: 20px;
+  margin: 20px 0 25px;
+}
+
+.product-features li {
+  margin-bottom: 8px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 22px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  color: #ffffff;
+  background: #0879bd;
+}
+
+.btn-primary:hover {
+  background: #065b91;
+}
+
+.btn-outline {
+  color: #0879bd;
+  border-color: #0879bd;
+  background: #ffffff;
+}
+
+.btn-outline:hover {
+  background: #eaf6ff;
+}
+
+.btn-full {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.custom-visual {
+  display: flex;
+  min-height: 340px;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #062b59, #0879bd);
+}
+
+.custom-visual h3 {
+  color: #ffffff;
+  font-size: 1.7rem;
+}
+
+.custom-visual p {
+  line-height: 1.7;
+}
+
+.custom-icon {
+  display: flex;
+  width: 75px;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.benefits-section {
+  background: #f3f8fc;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.benefit-item {
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.benefit-icon {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 18px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #0879bd;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.benefit-item h3 {
+  color: #082d59;
+}
+
+.benefit-item p {
+  color: #526579;
+  line-height: 1.8;
+}
+
+.products-cta {
+  padding: 75px 20px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #062b59, #0879bd);
+  text-align: center;
+}
+
+.products-cta h2 {
+  margin: 12px 0;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+}
+
+.products-cta > .container > p:not(.eyebrow):not(.contact-details) {
+  max-width: 650px;
+  margin: 0 auto 25px;
+  line-height: 1.8;
+}
+
+.products-cta .eyebrow {
+  color: #c5e8ff;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.btn-light {
+  color: #07315c;
+  background: #ffffff;
+}
+
+.btn-outline-light {
+  color: #ffffff;
+  border-color: #ffffff;
+  background: transparent;
+}
+
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.contact-details {
+  margin-top: 25px;
+  line-height: 1.9;
+}
+
+.site-footer {
+  padding: 25px 20px;
+  color: #526579;
+  background: #ffffff;
+  border-top: 1px solid #e1ebf4;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-content p {
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #0879bd;
+  text-decoration: none;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #082d59;
+  text-decoration: none;
+}
+
+.brand-icon {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #0879bd;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.brand strong,
+.brand small {
+  display: block;
+}
+
+.brand small {
+  margin-top: 3px;
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.main-nav a {
+  color: #183a5b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+  color: #0879bd;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Responsive layout for phones and tablets */
+
+@media (max-width: 700px) {
+  .product-grid,
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-hero {
+    padding: 60px 20px;
+  }
+
+  .products-section,
+  .benefits-section {
+    padding: 50px 16px;
+  }
+
+  .product-photo {
+    height: 300px;
+  }
+
+  .custom-visual {
+    min-height: 260px;
+  }
+
+  .product-info {
+    padding: 22px;
+  }
+
+  .nav-container,
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav {
+    justify-content: center;
+    gap: 14px;
+  }
+}
