@@ -7,255 +7,93 @@
 
   <title>Request a Quotation | HydroSpring Waters</title>
 
-  <meta
-    name="description"
-    content="Request a HydroSpring Waters quotation for 500 ml bottled water, bulk orders and custom-label enquiries."
-  >
+  <meta name="description"
+    content="Request a quotation for HydroSpring Waters 500 ml purified bottled water, with standard or customised labels.">
 
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    .enquiry-hero {
-      padding: 55px 20px;
-      text-align: center;
-      color: white;
-      background: linear-gradient(135deg, #062b59, #0879bd);
-    }
-
-    .enquiry-hero h1 {
-      margin: 10px 0;
-      font-size: clamp(2rem, 5vw, 3rem);
-    }
-
-    .enquiry-hero p {
-      max-width: 650px;
-      margin: 12px auto;
-      line-height: 1.8;
-    }
-
-    .enquiry-section {
-      padding: 55px 20px;
-      background: #f3f8fc;
-    }
-
-    .enquiry-card {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 32px;
-      background: white;
-      border: 1px solid #e1ebf4;
-      border-radius: 18px;
-      box-shadow: 0 12px 35px rgba(7, 43, 83, 0.08);
-    }
-
-    .enquiry-card h2 {
-      color: #082d59;
-      margin-top: 0;
-    }
-
-    .form-intro {
-      color: #526579;
-      line-height: 1.7;
-      margin-bottom: 25px;
-    }
-
-    .enquiry-form {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .form-field {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-
-    .form-field.full-width {
-      grid-column: 1 / -1;
-    }
-
-    .form-field label {
-      color: #183a5b;
-      font-size: 0.93rem;
-      font-weight: 700;
-    }
-
-    .form-field input,
-    .form-field select,
-    .form-field textarea {
-      box-sizing: border-box;
-      width: 100%;
-      padding: 12px;
-      color: #183a5b;
-      background: #fff;
-      border: 1px solid #cbd9e6;
-      border-radius: 8px;
-      font: inherit;
-    }
-
-    .form-field input:focus,
-    .form-field select:focus,
-    .form-field textarea:focus {
-      outline: 2px solid #0879bd;
-      outline-offset: 2px;
-    }
-
-    .form-field textarea {
-      min-height: 110px;
-      resize: vertical;
-    }
-
-    .form-note {
-      color: #526579;
-      font-size: 0.88rem;
-      line-height: 1.7;
-    }
-
-    .form-submit {
-      grid-column: 1 / -1;
-      width: 100%;
-      cursor: pointer;
-      font: inherit;
-    }
-
-    .form-status {
-      grid-column: 1 / -1;
-      color: #075c9c;
-      line-height: 1.7;
-      overflow-wrap: anywhere;
-    }
-
-    .form-status a {
-      color: #0879bd;
-      font-weight: 700;
-    }
-
-    @media (max-width: 600px) {
-      .enquiry-section {
-        padding: 30px 14px;
-      }
-
-      .enquiry-card {
-        padding: 22px 17px;
-      }
-
-      .enquiry-form {
-        grid-template-columns: 1fr;
-      }
-
-      .form-field.full-width,
-      .form-submit,
-      .form-status {
-        grid-column: 1;
-      }
-    }
-  </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
   <header class="site-header">
     <div class="container nav-container">
       <a class="brand" href="index.html">
-        <span class="brand-icon">H</span>
-        <span>
-          <strong>HydroSpring</strong>
-          <small>WATERS</small>
-        </span>
+        HydroSpring Waters
       </a>
 
       <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
-        <a href="enquiry.html" class="active">Request a Quote</a>
+        <a href="enquiry.html" aria-current="page">Request a Quote</a>
       </nav>
     </div>
   </header>
 
-  <!-- INTRODUCTION -->
-  <main>
-    <section class="enquiry-hero">
-      <p>HYDROSPRING WATERS</p>
-      <h1>Let's Prepare Your Quotation</h1>
+  <main class="container section">
+    <div class="section-heading">
+      <p class="eyebrow">LET'S WORK TOGETHER</p>
+      <h1>Request a Quotation</h1>
       <p>
-        Tell us what you need, and contact our team on WhatsApp
-        to discuss your bottled-water requirements.
+        Tell us what you need, and we will help you with a quotation
+        for HydroSpring Waters bottled water.
       </p>
-    </section>
+    </div>
 
-    <!-- ENQUIRY FORM -->
-    <section class="enquiry-section">
-      <div class="enquiry-card">
-        <h2>Customer Enquiry Form</h2>
+    <div class="enquiry-layout">
 
-        <p class="form-intro">
-          Complete the details below. Your information will be
-          prepared as a WhatsApp message for you to review and send.
-          Submitting this form does not place an order or confirm a price.
-        </p>
+      <section class="card">
+        <h2>Your Enquiry Details</h2>
 
-        <form id="enquiryForm" class="enquiry-form">
+        <form id="enquiryForm">
 
-          <div class="form-field">
-            <label for="customerName">Full name *</label>
+          <div class="form-group">
+            <label for="fullName">Full name *</label>
             <input
               type="text"
-              id="customerName"
-              name="customerName"
-              autocomplete="name"
-              required
-            >
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your full name"
+              required>
           </div>
 
-          <div class="form-field">
-            <label for="customerPhone">Contact number *</label>
+          <div class="form-group">
+            <label for="businessName">Business or organisation</label>
             <input
-              type="tel"
-              id="customerPhone"
-              name="customerPhone"
-              autocomplete="tel"
-              placeholder="+27..."
-              required
-            >
+              type="text"
+              id="businessName"
+              name="businessName"
+              placeholder="e.g. Guest house, church or company">
           </div>
 
-          <div class="form-field full-width">
-            <label for="customerEmail">Email address</label>
+          <div class="form-group">
+            <label for="email">Email address *</label>
             <input
               type="email"
-              id="customerEmail"
-              name="customerEmail"
-              autocomplete="email"
+              id="email"
+              name="email"
               placeholder="you@example.com"
-            >
+              required>
           </div>
 
-          <div class="form-field">
-            <label for="productType">Product required *</label>
-            <select id="productType" name="productType" required>
-              <option value="">Select a product</option>
-              <option value="Standard 500 ml bottled water">
-                Standard 500 ml bottled water
-              </option>
-              <option value="Custom-labelled 500 ml bottled water">
-                Custom-labelled 500 ml bottled water
-              </option>
-              <option value="Other bottled-water enquiry">
-                Other bottled-water enquiry
-              </option>
-            </select>
+          <div class="form-group">
+            <label for="phone">Contact number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Your contact number">
           </div>
 
-          <div class="form-field">
+          <div class="form-group">
             <label for="quantity">Estimated quantity *</label>
             <select id="quantity" name="quantity" required>
               <option value="">Select quantity</option>
-              <option value="24–100 bottles">24–100 bottles</option>
-              <option value="101–250 bottles">101–250 bottles</option>
-              <option value="251–500 bottles">251–500 bottles</option>
-              <option value="501–1000 bottles">501–1,000 bottles</option>
+              <option value="24 bottles">24 bottles</option>
+              <option value="48 bottles">48 bottles</option>
+              <option value="100 bottles">100 bottles</option>
+              <option value="250 bottles">250 bottles</option>
+              <option value="500 bottles">500 bottles</option>
+              <option value="1000 bottles">1,000 bottles</option>
               <option value="More than 1000 bottles">
                 More than 1,000 bottles
               </option>
@@ -263,146 +101,160 @@
             </select>
           </div>
 
-          <div class="form-field">
-            <label for="eventDate">Required date</label>
-            <input type="date" id="eventDate" name="eventDate">
-          </div>
-
-          <div class="form-field">
-            <label for="delivery">Delivery preference *</label>
-            <select id="delivery" name="delivery" required>
-              <option value="">Select an option</option>
-              <option value="Delivery quotation requested">
-                Request delivery quotation
+          <div class="form-group">
+            <label for="labelType">Label preference *</label>
+            <select id="labelType" name="labelType" required>
+              <option value="">Choose an option</option>
+              <option value="Standard labels">Standard labels</option>
+              <option value="Customised labels">Customised labels</option>
+              <option value="Both standard and customised labels">
+                Both standard and customised labels
               </option>
-              <option value="Collection enquiry">
-                Enquire about collection
-              </option>
-              <option value="Discuss available options">
-                Discuss available options
-              </option>
+              <option value="Need advice">I need advice</option>
             </select>
           </div>
 
-          <div class="form-field full-width">
-            <label for="location">Delivery area or collection location</label>
-            <input
-              type="text"
-              id="location"
-              name="location"
-              placeholder="Suburb or town"
-            >
+          <div class="form-group">
+            <label for="delivery">Delivery or collection</label>
+            <select id="delivery" name="delivery">
+              <option value="Please advise">Please advise me</option>
+              <option value="Delivery">Delivery</option>
+              <option value="Collection">Collection</option>
+            </select>
           </div>
 
-          <div class="form-field full-width">
+          <div class="form-group">
             <label for="message">Additional requirements</label>
             <textarea
               id="message"
               name="message"
-              placeholder="Tell us about your event, preferred label design or other requirements."
-            ></textarea>
+              rows="5"
+              placeholder="Tell us about your event, branding needs or preferred dates."></textarea>
           </div>
 
-          <p class="form-note form-field full-width">
-            Please avoid including payment details or other sensitive
-            personal information in this enquiry.
-          </p>
-
-          <button type="submit" class="btn btn-primary form-submit">
-            Continue to WhatsApp
+          <button type="submit" class="btn btn-primary">
+            Send Enquiry on WhatsApp
           </button>
 
-          <div
-            id="formStatus"
-            class="form-status"
-            role="status"
-            aria-live="polite"
-          ></div>
+          <p class="form-note">
+            Your enquiry will open in WhatsApp for you to review and send.
+          </p>
+
+          <p id="formStatus" role="status" aria-live="polite"></p>
 
         </form>
-      </div>
-    </section>
+      </section>
+
+      <aside class="card contact-card">
+        <h2>Contact HydroSpring Waters</h2>
+
+        <p>
+          Need bottled water for your business, organisation, event
+          or special occasion? Contact us to discuss your requirements.
+        </p>
+
+        <p><strong>Product:</strong> 500 ml purified bottled water</p>
+        <p><strong>Pricing:</strong> Request a quotation</p>
+        <p><strong>Labels:</strong> Standard and customised options</p>
+
+        <a
+          class="btn btn-secondary"
+          href="https://wa.me/27814799675"
+          target="_blank"
+          rel="noopener noreferrer">
+          Chat with Us
+        </a>
+
+        <p>
+          <strong>Email:</strong><br>
+          <a href="mailto:hydrospringwaters@gmail.com">
+            hydrospringwaters@gmail.com
+          </a>
+        </p>
+      </aside>
+
+    </div>
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-content">
-      <a class="brand footer-brand" href="index.html">
-        <span class="brand-icon">H</span>
-        <span>
-          <strong>HydroSpring</strong>
-          <small>WATERS</small>
-        </span>
-      </a>
-
-      <p>© <span id="current-year">2026</span> HydroSpring Waters.</p>
-
-      <a href="mailto:hydrospringwaters@gmail.com">
-        hydrospringwaters@gmail.com
-      </a>
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> HydroSpring Waters.
+        All rights reserved.
+      </p>
     </div>
   </footer>
 
   <script>
-    document.getElementById("current-year").textContent =
+    document.getElementById("year").textContent =
       new Date().getFullYear();
 
-    const enquiryForm = document.getElementById("enquiryForm");
-    const formStatus = document.getElementById("formStatus");
+    document.getElementById("enquiryForm").addEventListener(
+      "submit",
+      function (event) {
+        event.preventDefault();
 
-    enquiryForm.addEventListener("submit", function (event) {
-      event.preventDefault();
+        const fullName =
+          document.getElementById("fullName").value.trim();
 
-      if (!enquiryForm.reportValidity()) {
-        return;
-      }
+        const businessName =
+          document.getElementById("businessName").value.trim();
 
-      const data = new FormData(enquiryForm);
+        const email =
+          document.getElementById("email").value.trim();
 
-      const fields = [
-        ["Customer name", "customerName"],
-        ["Contact number", "customerPhone"],
-        ["Email", "customerEmail"],
-        ["Product", "productType"],
-        ["Estimated quantity", "quantity"],
-        ["Required date", "eventDate"],
-        ["Delivery preference", "delivery"],
-        ["Area", "location"],
-        ["Additional requirements", "message"]
-      ];
+        const phone =
+          document.getElementById("phone").value.trim();
 
-      let message = "Hello HydroSpring Waters! I would like a quotation.\n\n";
+        const quantity =
+          document.getElementById("quantity").value;
 
-      fields.forEach(function (field) {
-        const value = String(data.get(field[1]) || "").trim();
+        const labelType =
+          document.getElementById("labelType").value;
 
-        if (value) {
-          message += field[0] + ": " + value + "\n";
+        const delivery =
+          document.getElementById("delivery").value;
+
+        const message =
+          document.getElementById("message").value.trim();
+
+        const status =
+          document.getElementById("formStatus");
+
+        const whatsappMessage = [
+          "HYDROSPRING WATERS - QUOTATION REQUEST",
+          "",
+          "Name: " + fullName,
+          "Business/Organisation: " + (businessName || "Not provided"),
+          "Email: " + email,
+          "Contact number: " + (phone || "Not provided"),
+          "Quantity: " + quantity,
+          "Label preference: " + labelType,
+          "Delivery/Collection: " + delivery,
+          "Additional requirements: " + (message || "None"),
+          "",
+          "Please provide me with a quotation."
+        ].join("\n");
+
+        const whatsappURL =
+          "https://wa.me/27814799675?text=" +
+          encodeURIComponent(whatsappMessage);
+
+        status.textContent =
+          "Opening WhatsApp. Please review your enquiry and press Send.";
+
+        const whatsappWindow = window.open(
+          whatsappURL,
+          "_blank",
+          "noopener,noreferrer"
+        );
+
+        if (!whatsappWindow) {
+          status.textContent =
+            "If WhatsApp did not open, allow pop-ups or use the Chat with Us link above.";
         }
-      });
-
-      message += "\nPlease advise on availability, pricing and delivery.";
-
-      const whatsappURL =
-        "https://wa.me/27814799675?text=" +
-        encodeURIComponent(message);
-
-      formStatus.replaceChildren();
-
-      const explanation = document.createElement("p");
-      explanation.textContent =
-        "Your enquiry is ready. WhatsApp will open so you can review and send it to HydroSpring Waters.";
-      formStatus.appendChild(explanation);
-
-      const link = document.createElement("a");
-      link.href = whatsappURL;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = "Open WhatsApp to send your enquiry";
-      formStatus.appendChild(link);
-
-      window.open(whatsappURL, "_blank", "noopener,noreferrer");
-    });
+      }
+    );
   </script>
 
 </body>
