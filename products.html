@@ -5,21 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Products & Quotations | HydroSpring Waters</title>
-  <meta name="description" content="Explore HydroSpring Waters bottled water sizes, ask about customised labels, and request a quotation for your business or event.">
-  <meta name="theme-color" content="#073b70">
+  <title>Our Products | HydroSpring Waters</title>
+
+  <meta name="description" content="Discover HydroSpring Waters 500 ml purified bottled water with standard or customised labels. Request a quotation for your business, event, church or organisation.">
+
+  <meta name="theme-color" content="#073b67">
 
   <style>
     :root {
-      --navy: #073b70;
-      --blue: #087ac0;
-      --light-blue: #eaf6ff;
+      --navy: #073b67;
+      --blue: #087ac1;
+      --light-blue: #eaf6fc;
       --white: #ffffff;
-      --text: #243447;
-      --muted: #64748b;
-      --border: #d9e7f2;
-      --green: #13864b;
-      --shadow: 0 12px 35px rgba(7, 59, 112, 0.09);
+      --text: #243747;
+      --muted: #607587;
+      --border: #d8e7f0;
+      --green: #168447;
+      --shadow: 0 12px 35px rgba(7, 59, 103, 0.09);
     }
 
     * {
@@ -34,12 +36,11 @@
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
-      background: #f8fbff;
-      line-height: 1.65;
+      background: #f7fbfd;
+      line-height: 1.6;
     }
 
     a {
-      color: inherit;
       text-decoration: none;
     }
 
@@ -50,169 +51,198 @@
       font: inherit;
     }
 
-    button,
-    .button {
-      cursor: pointer;
-    }
-
     .container {
       width: min(1120px, 92%);
-      margin: auto;
+      margin: 0 auto;
     }
 
-    header {
+    /* HEADER */
+
+    .site-header {
       background: var(--white);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
-      z-index: 20;
+      z-index: 10;
     }
 
-    .navigation {
-      min-height: 86px;
+    .nav {
+      min-height: 84px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
-      padding: 10px 0;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
     }
 
     .brand img {
       display: block;
-      width: 190px;
-      max-width: 45vw;
-      height: auto;
+      width: 64px;
+      height: 64px;
       object-fit: contain;
     }
 
-    nav {
+    .brand-name {
+      color: var(--navy);
+      font-size: 19px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .brand-tagline {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+
+    .nav-links {
       display: flex;
+      align-items: center;
       flex-wrap: wrap;
       gap: 22px;
-      align-items: center;
     }
 
-    nav a {
+    .nav-links a {
+      color: var(--navy);
       font-size: 14px;
       font-weight: 700;
-      color: var(--navy);
     }
 
-    nav a:hover {
+    .nav-links a:hover {
       color: var(--blue);
     }
 
+    .nav-cta {
+      background: var(--navy);
+      color: white !important;
+      padding: 10px 17px;
+      border-radius: 8px;
+    }
+
+    /* HERO */
+
     .hero {
-      background: linear-gradient(135deg, #062d56, #087ac0);
-      color: var(--white);
-      padding: 64px 0;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(255,255,255,.15), transparent 25%),
+        linear-gradient(125deg, #052c4d, #087ac1);
+      color: white;
+      padding: 76px 0;
       overflow: hidden;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 40px;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 48px;
       align-items: center;
     }
 
     .eyebrow {
-      text-transform: uppercase;
-      letter-spacing: 2px;
+      display: inline-block;
+      color: #d8f1ff;
       font-size: 12px;
       font-weight: 800;
-      color: #bfe7ff;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
     }
 
-    h1 {
-      font-size: clamp(36px, 5vw, 56px);
-      line-height: 1.12;
-      margin: 14px 0;
+    .hero h1 {
+      font-size: clamp(35px, 5vw, 56px);
+      line-height: 1.08;
+      margin: 0 0 20px;
+      letter-spacing: -1.5px;
     }
 
     .hero p {
+      color: #e5f5ff;
+      max-width: 570px;
+      margin: 0 0 28px;
       font-size: 17px;
-      max-width: 580px;
-      color: #edf8ff;
-    }
-
-    .hero-image {
-      background: white;
-      border-radius: 24px;
-      padding: 20px;
-      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.17);
-      text-align: center;
-    }
-
-    .hero-image img {
-      display: block;
-      width: 100%;
-      max-height: 360px;
-      object-fit: contain;
-      margin: auto;
-    }
-
-    .hero-image p {
-      color: var(--navy);
-      font-size: 13px;
-      margin: 12px 0 0;
-      font-weight: 700;
     }
 
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      border: 0;
+      gap: 8px;
+      padding: 13px 21px;
+      border: none;
       border-radius: 9px;
-      padding: 13px 20px;
       font-weight: 800;
-      font-size: 14px;
-      transition: transform 0.2s, opacity 0.2s;
+      cursor: pointer;
+      transition: transform .2s, opacity .2s;
     }
 
     .button:hover {
       transform: translateY(-2px);
-      opacity: 0.94;
     }
 
-    .button-white {
+    .button-light {
       background: white;
       color: var(--navy);
     }
 
-    .button-blue {
-      background: var(--blue);
+    .button-outline {
+      border: 1px solid rgba(255,255,255,.7);
       color: white;
+      background: transparent;
+      margin-left: 8px;
     }
 
-    .button-green {
-      background: var(--green);
-      color: white;
+    .hero-image {
+      background: rgba(255,255,255,.96);
+      padding: 20px;
+      border-radius: 24px;
+      box-shadow: 0 20px 55px rgba(0,0,0,.18);
+      text-align: center;
     }
 
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 24px;
+    .hero-image img {
+      width: 100%;
+      max-width: 360px;
+      height: 330px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
     }
+
+    .hero-image-caption {
+      color: var(--navy);
+      font-weight: 800;
+      margin-top: 10px;
+    }
+
+    /* GENERAL SECTIONS */
 
     section {
-      padding: 62px 0;
+      padding: 68px 0;
     }
 
     .section-heading {
       text-align: center;
-      max-width: 720px;
-      margin: 0 auto 32px;
+      max-width: 700px;
+      margin: 0 auto 38px;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--blue);
+      margin-bottom: 8px;
     }
 
     .section-heading h2 {
+      font-size: clamp(28px, 4vw, 39px);
       color: var(--navy);
-      font-size: clamp(28px, 4vw, 38px);
       line-height: 1.2;
-      margin: 0 0 12px;
+      margin: 0 0 13px;
     }
 
     .section-heading p {
@@ -220,116 +250,165 @@
       margin: 0;
     }
 
-    .sizes-grid {
+    /* PRODUCT CARD */
+
+    .product-layout {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 36px;
+      align-items: stretch;
     }
 
-    .size-card {
-      background: white;
+    .product-photo {
+      background: var(--white);
       border: 1px solid var(--border);
-      padding: 25px;
-      border-radius: 16px;
+      border-radius: 20px;
+      padding: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       box-shadow: var(--shadow);
     }
 
-    .size-card h3 {
-      color: var(--navy);
-      margin: 0 0 8px;
-      font-size: 21px;
+    .product-photo img {
+      width: 100%;
+      height: 390px;
+      object-fit: contain;
     }
 
-    .size-card p {
+    .product-info {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .product-label {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 30px;
+      background: var(--light-blue);
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .product-info h3 {
+      font-size: 30px;
+      color: var(--navy);
+      margin: 0 0 12px;
+    }
+
+    .product-info p {
+      color: var(--muted);
+    }
+
+    .product-features {
+      padding: 0;
+      margin: 22px 0;
+      list-style: none;
+    }
+
+    .product-features li {
+      margin: 12px 0;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .check {
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    .quote-note {
+      padding: 15px;
+      background: var(--light-blue);
+      border-radius: 10px;
+      color: var(--navy);
+      font-size: 14px;
+      margin: 20px 0;
+    }
+
+    .button-primary {
+      background: var(--blue);
+      color: white;
+    }
+
+    /* BENEFITS */
+
+    .benefits {
+      background: var(--light-blue);
+    }
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .benefit-card {
+      padding: 26px;
+      border-radius: 16px;
+      background: white;
+      border: 1px solid var(--border);
+    }
+
+    .benefit-icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .benefit-card h3 {
+      color: var(--navy);
+      margin: 0 0 8px;
+      font-size: 19px;
+    }
+
+    .benefit-card p {
       color: var(--muted);
       margin: 0;
       font-size: 14px;
     }
 
-    .size-number {
-      display: inline-block;
-      color: var(--blue);
-      background: var(--light-blue);
-      border-radius: 8px;
-      padding: 5px 10px;
-      font-size: 12px;
-      font-weight: 800;
-      margin-bottom: 13px;
-    }
+    /* ENQUIRY FORM */
 
-    .label-section {
-      background: var(--light-blue);
-    }
-
-    .label-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    .label-card {
+    .enquiry-section {
       background: white;
+    }
+
+    .form-wrap {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 34px;
+      background: #fbfdff;
       border: 1px solid var(--border);
-      padding: 25px;
-      border-radius: 16px;
-    }
-
-    .label-card h3 {
-      color: var(--navy);
-      margin-top: 0;
-    }
-
-    .label-card p {
-      color: var(--muted);
-      margin-bottom: 0;
-    }
-
-    .form-section {
-      background: white;
-    }
-
-    .form-layout {
-      display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 35px;
-      align-items: start;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
     }
 
     .form-intro {
-      background: linear-gradient(145deg, #073b70, #087ac0);
-      color: white;
-      border-radius: 18px;
-      padding: 30px;
+      text-align: center;
+      margin-bottom: 28px;
     }
 
     .form-intro h2 {
-      font-size: 30px;
-      line-height: 1.2;
-      margin-top: 0;
+      color: var(--navy);
+      font-size: 31px;
+      margin: 0 0 8px;
     }
 
     .form-intro p {
-      color: #edf8ff;
-    }
-
-    .contact-detail {
-      margin-top: 22px;
-      padding-top: 18px;
-      border-top: 1px solid rgba(255, 255, 255, 0.25);
-      font-size: 14px;
-    }
-
-    form {
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 28px;
-      box-shadow: var(--shadow);
+      color: var(--muted);
+      margin: 0;
     }
 
     .form-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 17px;
+      grid-template-columns: 1fr 1fr;
+      gap: 19px;
     }
 
     .field {
@@ -338,558 +417,749 @@
       gap: 7px;
     }
 
-    .full-width {
+    .field-full {
       grid-column: 1 / -1;
     }
 
-    label {
+    .field label {
       color: var(--navy);
-      font-size: 13px;
-      font-weight: 800;
+      font-weight: 700;
+      font-size: 14px;
     }
 
-    input,
-    select,
-    textarea {
+    .field input,
+    .field select,
+    .field textarea {
       width: 100%;
-      border: 1px solid #cbd9e6;
-      border-radius: 8px;
-      padding: 12px;
-      color: var(--text);
+      padding: 13px 14px;
+      border: 1px solid #c9dce8;
+      border-radius: 9px;
       background: white;
+      color: var(--text);
       outline: none;
     }
 
-    input:focus,
-    select:focus,
-    textarea:focus {
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
       border-color: var(--blue);
-      box-shadow: 0 0 0 3px rgba(8, 122, 192, 0.12);
+      box-shadow: 0 0 0 3px rgba(8,122,193,.12);
     }
 
-    textarea {
-      min-height: 110px;
+    .field textarea {
+      min-height: 115px;
       resize: vertical;
     }
 
-    .consent {
+    .consent-row {
       display: flex;
       align-items: flex-start;
       gap: 10px;
       font-size: 13px;
       color: var(--muted);
+      margin: 23px 0;
     }
 
-    .consent input {
-      width: auto;
+    .consent-row input {
       margin-top: 5px;
-    }
-
-    .form-note {
-      color: var(--muted);
-      font-size: 12px;
-      margin: 14px 0;
+      flex: 0 0 auto;
     }
 
     .submit-button {
       width: 100%;
-      margin-top: 16px;
+      background: var(--navy);
+      color: white;
+      padding: 15px;
+      font-size: 16px;
     }
 
-    #formStatus {
+    .submit-button:disabled {
+      opacity: .65;
+      cursor: wait;
+      transform: none;
+    }
+
+    .form-status {
       display: none;
-      margin-top: 18px;
-      padding: 14px;
+      padding: 15px;
       border-radius: 9px;
+      margin: 18px 0;
       font-size: 14px;
       overflow-wrap: anywhere;
     }
 
-    #formStatus.success {
+    .form-status.success {
       display: block;
-      background: #e9f8ef;
-      color: #155b35;
-      border: 1px solid #b6e6c8;
+      background: #e8f7ee;
+      color: #145b31;
+      border: 1px solid #b9e5c8;
     }
 
-    #formStatus.error {
+    .form-status.error {
       display: block;
-      background: #fff1f0;
-      color: #8b2424;
-      border: 1px solid #f3c5c2;
+      background: #fff0f0;
+      color: #8d2020;
+      border: 1px solid #efc3c3;
     }
 
-    .whatsapp-backup {
-      display: none;
-      margin-top: 12px;
+    .form-status.info {
+      display: block;
+      background: #eaf6fc;
+      color: var(--navy);
+      border: 1px solid #c7e5f5;
     }
+
+    .privacy-note {
+      color: var(--muted);
+      text-align: center;
+      font-size: 12px;
+      margin: 15px 0 0;
+    }
+
+    /* CONTACT STRIP */
+
+    .contact-strip {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 42px 0;
+    }
+
+    .contact-strip h2 {
+      margin: 0 0 10px;
+      font-size: 29px;
+    }
+
+    .contact-strip p {
+      color: #e1f2ff;
+      margin: 0 0 22px;
+    }
+
+    .button-whatsapp {
+      background: #20b965;
+      color: white;
+    }
+
+    /* FOOTER */
 
     footer {
-      background: #062744;
-      color: white;
-      padding: 35px 0;
-    }
-
-    .footer-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: center;
-    }
-
-    footer p {
-      color: #d4e9f8;
+      background: #042541;
+      color: #d9e9f5;
+      padding: 30px 0;
+      text-align: center;
       font-size: 13px;
-      margin: 5px 0;
     }
 
     footer a {
-      color: #bfe7ff;
+      color: white;
     }
 
-    @media (max-width: 800px) {
-      .navigation {
+    footer p {
+      margin: 6px 0;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 780px) {
+      .nav {
+        padding: 12px 0;
+        align-items: flex-start;
         flex-direction: column;
-        padding: 14px 0;
+        gap: 13px;
       }
 
-      nav {
-        justify-content: center;
-        gap: 13px 18px;
+      .brand img {
+        width: 54px;
+        height: 54px;
       }
 
-      .hero-grid,
-      .form-layout {
-        grid-template-columns: 1fr;
+      .nav-links {
+        width: 100%;
+        gap: 15px;
+      }
+
+      .nav-links a {
+        font-size: 13px;
       }
 
       .hero {
-        padding: 45px 0;
+        padding: 48px 0;
       }
 
-      .hero-image {
-        max-width: 450px;
-        margin: auto;
-        width: 100%;
+      .hero-grid,
+      .product-layout {
+        grid-template-columns: 1fr;
       }
 
-      .sizes-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+      .hero-grid {
+        gap: 30px;
+      }
+
+      .hero-image img {
+        height: 270px;
+      }
+
+      section {
+        padding: 48px 0;
+      }
+
+      .benefit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .product-photo img {
+        height: 300px;
+      }
+
+      .product-info,
+      .form-wrap {
+        padding: 23px;
       }
     }
 
     @media (max-width: 520px) {
-      section {
-        padding: 45px 0;
-      }
-
-      .sizes-grid,
-      .label-grid,
       .form-grid {
         grid-template-columns: 1fr;
       }
 
-      .full-width {
+      .field-full {
         grid-column: auto;
       }
 
-      form,
-      .form-intro {
-        padding: 21px;
+      .button-outline {
+        margin: 12px 0 0;
       }
 
-      .hero-actions .button {
-        width: 100%;
+      .hero h1 {
+        letter-spacing: -0.8px;
+      }
+
+      .product-info h3 {
+        font-size: 25px;
       }
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <div class="container navigation">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav">
+
       <a class="brand" href="index.html" aria-label="HydroSpring Waters home">
-        <img src="hydrospring-logo.png.png"
-             alt="HydroSpring Waters logo"
-             onerror="this.style.display='none';">
+        <img
+          src="hydrospring-logo.png.png"
+          alt="HydroSpring Waters logo"
+          onerror="this.style.display='none'"
+        >
+
+        <span>
+          <span class="brand-name">HydroSpring Waters</span>
+          <span class="brand-tagline">REFRESH • REHYDRATE • RECONNECT</span>
+        </span>
       </a>
 
-      <nav aria-label="Main navigation">
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
         <a href="products.html">Products</a>
-        <a href="#labels">Custom Labels</a>
-        <a href="#quotation">Request a Quote</a>
+        <a href="#benefits">Why HydroSpring</a>
+        <a href="#enquiry" class="nav-cta">Request a Quote</a>
       </nav>
+
     </div>
   </header>
 
   <main>
+
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero-grid">
+
         <div>
-          <div class="eyebrow">HydroSpring Waters</div>
-          <h1>Water for Your Business, Brand and Special Events</h1>
+          <span class="eyebrow">Hydration for every occasion</span>
+
+          <h1>Water that carries your brand.</h1>
+
           <p>
-            Explore our bottled water size options and contact us for a quotation
-            for your business, organisation, gathering or event.
+            Discover HydroSpring Waters 500 ml purified bottled water
+            for businesses, events, churches, organisations and special
+            occasions. Ask us about standard and customised labels.
           </p>
 
-          <div class="hero-actions">
-            <a class="button button-white" href="#quotation">
-              Request a Quotation
-            </a>
-            <a class="button button-white"
-               href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20to%20enquire%20about%20your%20bottled%20water.">
-              Chat on WhatsApp
-            </a>
-          </div>
+          <a href="#enquiry" class="button button-light">
+            Request a Quotation
+          </a>
+
+          <a
+            href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20a%20quotation."
+            class="button button-outline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp Us
+          </a>
         </div>
 
         <div class="hero-image">
-          <img src="hydrospring-500ml.jpg.png"
-               alt="HydroSpring Waters 500 ml bottled water"
-               onerror="this.alt='HydroSpring Waters bottle photograph';">
-          <p>HydroSpring Waters · 500 ml bottle</p>
+          <img
+            src="hydrospring-500ml.jpg.png"
+            alt="HydroSpring Waters 500 ml bottled water"
+            onerror="this.onerror=null;this.src='https://placehold.co/400x400/eaf6fc/073b67?text=HydroSpring+Waters'"
+          >
+          <div class="hero-image-caption">
+            HydroSpring Waters · 500 ml
+          </div>
         </div>
+
       </div>
     </section>
 
-    <section id="products">
+    <!-- PRODUCT -->
+    <section id="product">
       <div class="container">
+
         <div class="section-heading">
-          <h2>Explore Our Bottle Sizes</h2>
+          <span class="eyebrow">Our product</span>
+          <h2>Simple hydration. Professional presentation.</h2>
           <p>
-            Tell us which size you need and the approximate quantity.
-            Contact us for availability, specifications and pricing.
+            A convenient bottled-water option for everyday business
+            needs, gatherings and branded occasions.
           </p>
         </div>
 
-        <div class="sizes-grid">
-          <article class="size-card">
-            <span class="size-number">330 ml</span>
-            <h3>Compact Bottles</h3>
-            <p>Ask us about options for meetings, events and hospitality.</p>
-          </article>
+        <div class="product-layout">
 
-          <article class="size-card">
-            <span class="size-number">500 ml</span>
-            <h3>500 ml Bottles</h3>
-            <p>Ask about bottles for businesses, gatherings and promotional needs.</p>
-          </article>
+          <div class="product-photo">
+            <img
+              src="hydrospring-500ml.jpg.png"
+              alt="500 ml HydroSpring Waters bottle"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='https://placehold.co/400x400/eaf6fc/073b67?text=500+ml+Water'"
+            >
+          </div>
 
-          <article class="size-card">
-            <span class="size-number">1 litre</span>
-            <h3>1 Litre Bottles</h3>
-            <p>Enquire about this size for your specific requirements.</p>
-          </article>
+          <div class="product-info">
+            <span class="product-label">AVAILABLE FOR QUOTATION</span>
 
-          <article class="size-card">
-            <span class="size-number">1.5 litres</span>
-            <h3>1.5 Litre Bottles</h3>
-            <p>Ask about larger bottles for home, workplace or group use.</p>
-          </article>
+            <h3>500 ml Bottled Water</h3>
 
-          <article class="size-card">
-            <span class="size-number">5 litres</span>
-            <h3>5 Litre Bottles</h3>
-            <p>Contact us to enquire about availability and quantities.</p>
-          </article>
-
-          <article class="size-card">
-            <span class="size-number">Other sizes</span>
-            <h3>Special Requirements</h3>
-            <p>Tell us your preferred size and we will discuss your requirements.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="label-section" id="labels">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Standard or Customised Labels</h2>
-          <p>
-            Let us know whether you are interested in standard labels or
-            personalised branding. Availability and specifications must be confirmed.
-          </p>
-        </div>
-
-        <div class="label-grid">
-          <article class="label-card">
-            <h3>Standard Labels</h3>
             <p>
-              Enquire about standard-label options for your bottled water order.
-            </p>
-          </article>
-
-          <article class="label-card">
-            <h3>Customised Labels</h3>
-            <p>
-              Ask about personalised labels for businesses, guesthouses,
-              conferences, weddings and corporate events.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="form-section" id="quotation">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Request a Quotation or Send an Enquiry</h2>
-          <p>
-            Complete the form below and tell us what you need.
-            We will need to confirm pricing and availability.
-          </p>
-        </div>
-
-        <div class="form-layout">
-          <aside class="form-intro">
-            <h2>Let's Discuss Your Requirements</h2>
-            <p>
-              Whether you represent a business, guesthouse, gym, office,
-              church or event, share your requirements with us.
+              A practical bottled-water option for meetings, hospitality,
+              conferences, church programmes, celebrations and other
+              occasions.
             </p>
 
-            <div class="contact-detail">
-              <strong>WhatsApp</strong>
-              <p>+27 81 479 9675</p>
-              <a class="button button-white"
-                 href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20a%20quotation.">
-                Request via WhatsApp
-              </a>
+            <ul class="product-features">
+              <li>
+                <span class="check">✓</span>
+                <span><strong>500 ml size</strong> for convenient serving.</span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span><strong>Standard labels</strong> for regular orders.</span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span><strong>Customised label enquiries</strong> for your brand or occasion.</span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span><strong>Bulk order enquiries</strong> for businesses and events.</span>
+              </li>
+            </ul>
+
+            <div class="quote-note">
+              <strong>Pricing:</strong> Request a quotation.
+              Please share your quantity, label preference and intended
+              use so we can respond to your requirements.
             </div>
 
-            <div class="contact-detail">
-              <strong>Email</strong>
-              <p>
-                <a href="mailto:hydrospringwaters@gmail.com">
-                  hydrospringwaters@gmail.com
-                </a>
-              </p>
-            </div>
-          </aside>
+            <a href="#enquiry" class="button button-primary">
+              Get a Quote
+            </a>
+          </div>
 
-          <form id="quotationForm">
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Who we serve</span>
+          <h2>Made for your occasion</h2>
+          <p>
+            Tell us what you need, and let us discuss a suitable order
+            for your organisation or event.
+          </p>
+        </div>
+
+        <div class="benefit-grid">
+
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">🏢</div>
+            <h3>Businesses & Offices</h3>
+            <p>
+              Enquire about bottled water for meetings, staff needs,
+              clients and business functions.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">🎉</div>
+            <h3>Events & Celebrations</h3>
+            <p>
+              Ask about quantities and customised labels for conferences,
+              weddings, parties and community events.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">🏨</div>
+            <h3>Hospitality & Organisations</h3>
+            <p>
+              Enquire about orders for guest houses, churches, restaurants,
+              gyms and other organisations.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ENQUIRY FORM -->
+    <section class="enquiry-section" id="enquiry">
+      <div class="container">
+
+        <div class="form-wrap">
+
+          <div class="form-intro">
+            <span class="eyebrow">Let's talk about your order</span>
+            <h2>Request a Quotation</h2>
+            <p>
+              Complete the form below and tell us what you need.
+              Fields marked * are required.
+            </p>
+          </div>
+
+          <div
+            id="formStatus"
+            class="form-status"
+            role="status"
+            aria-live="polite"
+          ></div>
+
+          <form id="enquiryForm">
+
             <div class="form-grid">
+
               <div class="field">
                 <label for="first_name">First name *</label>
-                <input id="first_name" name="first_name"
-                       autocomplete="given-name" required>
+                <input
+                  id="first_name"
+                  name="first_name"
+                  type="text"
+                  autocomplete="given-name"
+                  required
+                >
               </div>
 
               <div class="field">
                 <label for="last_name">Last name *</label>
-                <input id="last_name" name="last_name"
-                       autocomplete="family-name" required>
+                <input
+                  id="last_name"
+                  name="last_name"
+                  type="text"
+                  autocomplete="family-name"
+                  required
+                >
               </div>
 
               <div class="field">
                 <label for="email">Email address *</label>
-                <input id="email" name="email" type="email"
-                       autocomplete="email" required>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                >
               </div>
 
               <div class="field">
                 <label for="contact_number">Contact number *</label>
-                <input id="contact_number" name="contact_number"
-                       type="tel" autocomplete="tel" required>
+                <input
+                  id="contact_number"
+                  name="contact_number"
+                  type="tel"
+                  autocomplete="tel"
+                  required
+                >
               </div>
 
-              <div class="field full-width">
-                <label for="business_name">Business or organisation</label>
-                <input id="business_name" name="business_name"
-                       placeholder="Business, church, event or organisation">
+              <div class="field field-full">
+                <label for="business_name">
+                  Business or organisation
+                </label>
+                <input
+                  id="business_name"
+                  name="business_name"
+                  type="text"
+                  placeholder="Company, church, guest house or event name"
+                >
               </div>
 
               <div class="field">
-                <label for="enquiry_type">What do you need? *</label>
-                <select id="enquiry_type" name="enquiry_type" required>
-                  <option value="">Select an option</option>
-                  <option value="Quotation Request">Quotation request</option>
-                  <option value="General Enquiry">General enquiry</option>
-                  <option value="Wholesale or Reseller Enquiry">Wholesale or reseller enquiry</option>
-                  <option value="Custom Label Enquiry">Custom label enquiry</option>
-                </select>
-              </div>
-
-              <div class="field">
-                <label for="product_size">Preferred bottle size *</label>
+                <label for="product_size">Bottle size *</label>
                 <select id="product_size" name="product_size" required>
-                  <option value="">Select a size</option>
-                  <option value="330 ml">330 ml</option>
+                  <option value="">Select bottle size</option>
                   <option value="500 ml">500 ml</option>
-                  <option value="1 litre">1 litre</option>
-                  <option value="1.5 litres">1.5 litres</option>
-                  <option value="5 litres">5 litres</option>
-                  <option value="Other size">Other size</option>
-                  <option value="Multiple sizes">Multiple sizes</option>
                 </select>
               </div>
 
               <div class="field">
                 <label for="label_type">Label preference *</label>
                 <select id="label_type" name="label_type" required>
-                  <option value="">Select a preference</option>
+                  <option value="">Choose label preference</option>
                   <option value="Standard labels">Standard labels</option>
                   <option value="Customised labels">Customised labels</option>
-                  <option value="Both">Both</option>
-                  <option value="Need advice">Need advice</option>
+                  <option value="Both">Both standard and customised labels</option>
                 </select>
               </div>
 
               <div class="field">
                 <label for="quantity">Estimated quantity *</label>
-                <input id="quantity" name="quantity"
-                       placeholder="e.g. 100, 500 or 1,000" required>
+                <select id="quantity" name="quantity" required>
+                  <option value="">Select estimated quantity</option>
+                  <option value="1–50 bottles">1–50 bottles</option>
+                  <option value="51–100 bottles">51–100 bottles</option>
+                  <option value="101–250 bottles">101–250 bottles</option>
+                  <option value="251–500 bottles">251–500 bottles</option>
+                  <option value="501–1000 bottles">501–1,000 bottles</option>
+                  <option value="1000+ bottles">More than 1,000 bottles</option>
+                  <option value="Not sure yet">Not sure yet</option>
+                </select>
               </div>
 
-              <div class="field full-width">
-                <label for="additional_info">Additional details</label>
-                <textarea id="additional_info" name="additional_info"
-                  placeholder="Tell us about your requirements, event date, delivery area or branding needs."></textarea>
+              <div class="field">
+                <label for="enquiry_type">Enquiry type *</label>
+                <select id="enquiry_type" name="enquiry_type" required>
+                  <option value="">Select enquiry type</option>
+                  <option value="Price quotation">Price quotation</option>
+                  <option value="Bulk order">Bulk order</option>
+                  <option value="Customised labels">Customised labels</option>
+                  <option value="Business supply">Business supply</option>
+                  <option value="Event supply">Event supply</option>
+                  <option value="General enquiry">General enquiry</option>
+                </select>
               </div>
 
-              <div class="field full-width">
-                <label class="consent" for="consent">
-                  <input type="checkbox" id="consent" name="consent"
-                         value="Yes" required>
-                  <span>
-                    I agree that HydroSpring Waters may use the contact details
-                    I provide to respond to this enquiry. *
-                  </span>
+              <div class="field field-full">
+                <label for="additional_info">
+                  Additional details
                 </label>
+                <textarea
+                  id="additional_info"
+                  name="additional_info"
+                  placeholder="Tell us about your event, preferred delivery area, required date or other details."
+                ></textarea>
               </div>
+
             </div>
 
-            <p class="form-note">
-              Submitting this form requests a quotation or information.
-              It does not confirm an order, price or delivery.
-            </p>
+            <label class="consent-row" for="consent">
+              <input
+                id="consent"
+                name="consent"
+                type="checkbox"
+                value="Yes"
+                required
+              >
+              <span>
+                I agree that HydroSpring Waters may use the contact
+                information I provide to respond to this enquiry. *
+              </span>
+            </label>
 
-            <button class="button button-blue submit-button"
-                    id="submitButton" type="submit">
-              Submit Request
+            <button
+              id="submitButton"
+              class="button submit-button"
+              type="submit"
+            >
+              Submit Enquiry
             </button>
 
-            <div id="formStatus" role="status" aria-live="polite"></div>
+            <p class="privacy-note">
+              Your information is used to respond to your enquiry.
+              Please do not submit passwords or sensitive personal information.
+            </p>
 
-            <a id="whatsappBackup" class="button button-green whatsapp-backup"
-               href="#" target="_blank" rel="noopener noreferrer">
-              Send Request Through WhatsApp
-            </a>
           </form>
+
+          <div style="text-align:center; margin-top:22px;">
+            <p style="color:#607587; margin-bottom:10px;">
+              Prefer to contact us directly?
+            </p>
+
+            <a
+              class="button button-whatsapp"
+              href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20a%20quotation."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp HydroSpring Waters
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
+
+    <!-- CONTACT STRIP -->
+    <section class="contact-strip">
+      <div class="container">
+        <h2>Let's plan your next order.</h2>
+        <p>
+          Contact HydroSpring Waters to discuss your bottled-water requirements.
+        </p>
+
+        <a
+          class="button button-whatsapp"
+          href="https://wa.me/27814799675?text=Hello%20HydroSpring%20Waters%2C%20I%20would%20like%20to%20discuss%20an%20order."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Chat with Us on WhatsApp
+        </a>
+      </div>
+    </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <div class="container footer-content">
-      <div>
-        <strong>HydroSpring Waters</strong>
-        <p>Purified bottled water enquiries and quotations.</p>
-      </div>
-      <div>
-        <p>
-          Email:
-          <a href="mailto:hydrospringwaters@gmail.com">
-            hydrospringwaters@gmail.com
-          </a>
-        </p>
-        <p>
-          WhatsApp:
-          <a href="https://wa.me/27814799675">+27 81 479 9675</a>
-        </p>
-        <p>&copy; <span id="year"></span> HydroSpring Waters.</p>
-      </div>
+    <div class="container">
+      <p><strong>HydroSpring Waters</strong></p>
+      <p>Refresh • Rehydrate • Reconnect</p>
+      <p>
+        Email:
+        <a href="mailto:hydrospringwaters@gmail.com">
+          hydrospringwaters@gmail.com
+        </a>
+      </p>
+      <p>
+        WhatsApp:
+        <a href="https://wa.me/27814799675">
+          +27 81 479 9675
+        </a>
+      </p>
+      <p>© <span id="currentYear"></span> HydroSpring Waters. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
-    // HydroSpring Waters Google Apps Script web app URL.
+    /*
+      HydroSpring Waters enquiry form.
+      This URL is the Google Apps Script web app URL provided for the project.
+    */
     const GOOGLE_SCRIPT_URL =
       "https://script.google.com/macros/s/AKfycbw7Ps6QVOPqwF4HlY2HUgKaAFfJ5zTVctNeG-lYMAbdFxK6akgwP15SukYM-5DQtzLq/exec";
 
-    const form = document.getElementById("quotationForm");
+    const form = document.getElementById("enquiryForm");
     const statusBox = document.getElementById("formStatus");
     const submitButton = document.getElementById("submitButton");
-    const whatsappBackup = document.getElementById("whatsappBackup");
 
-    document.getElementById("year").textContent =
+    document.getElementById("currentYear").textContent =
       new Date().getFullYear();
 
     function showStatus(message, type) {
       statusBox.textContent = message;
-      statusBox.className = type;
-      statusBox.style.display = "block";
+      statusBox.className = "form-status " + type;
+      statusBox.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest"
+      });
     }
 
-    function makeWhatsAppMessage(data) {
-      return [
-        "Hello HydroSpring Waters, I would like to submit a request.",
-        "",
-        "Request type: " + data.get("enquiry_type"),
-        "Name: " + data.get("first_name") + " " + data.get("last_name"),
-        "Email: " + data.get("email"),
-        "Contact number: " + data.get("contact_number"),
-        "Business/organisation: " + (data.get("business_name") || "Not provided"),
-        "Bottle size: " + data.get("product_size"),
-        "Label preference: " + data.get("label_type"),
-        "Estimated quantity: " + data.get("quantity"),
-        "Additional details: " + (data.get("additional_info") || "None")
-      ].join("\n");
-    }
-
-    form.addEventListener("submit", async function(event) {
+    form.addEventListener("submit", async function (event) {
       event.preventDefault();
-
-      statusBox.style.display = "none";
-      whatsappBackup.style.display = "none";
 
       if (!form.reportValidity()) {
         return;
       }
 
-      if (!GOOGLE_SCRIPT_URL ||
-          !GOOGLE_SCRIPT_URL.startsWith("https://script.google.com/macros/s/") ||
-          !GOOGLE_SCRIPT_URL.endsWith("/exec")) {
-        showStatus(
-          "The online tracker URL is missing or invalid. Please use WhatsApp to send your request.",
-          "error"
-        );
-
-        const fallbackData = new FormData(form);
-        whatsappBackup.href =
-          "https://wa.me/27814799675?text=" +
-          encodeURIComponent(makeWhatsAppMessage(fallbackData));
-        whatsappBackup.style.display = "inline-flex";
-        return;
-      }
-
-      const data = new FormData(form);
-
-      // Include common field-name aliases for compatibility with the tracker.
-      data.set("business_or_organisation", data.get("business_name") || "");
-      data.set("business_organisation", data.get("business_name") || "");
-      data.set("bottle_size", data.get("product_size") || "");
-      data.set("label_preference", data.get("label_type") || "");
-      data.set("estimated_quantity", data.get("quantity") || "");
-
+      const originalButtonText = "Submit Enquiry";
       submitButton.disabled = true;
       submitButton.textContent = "Submitting...";
+      statusBox.className = "form-status";
+      statusBox.textContent = "";
+
+      /*
+        IMPORTANT:
+        The Apps Script expects participation and church_org.
+        The form displays enquiry_type and business_name.
+        Map the visible fields to the exact names expected by the script.
+      */
+      const formData = new FormData(form);
+
+      formData.set(
+        "participation",
+        formData.get("enquiry_type") || ""
+      );
+
+      formData.set(
+        "church_org",
+        formData.get("business_name") || ""
+      );
+
+      /*
+        Provide additional aliases so the submitted values remain
+        compatible with other versions of the tracker.
+      */
+      formData.set(
+        "business_or_organisation",
+        formData.get("business_name") || ""
+      );
+
+      formData.set(
+        "business_organisation",
+        formData.get("business_name") || ""
+      );
+
+      formData.set(
+        "bottle_size",
+        formData.get("product_size") || ""
+      );
+
+      formData.set(
+        "label_preference",
+        formData.get("label_type") || ""
+      );
+
+      formData.set(
+        "estimated_quantity",
+        formData.get("quantity") || ""
+      );
+
+      /*
+        Send URL-encoded form data to Google Apps Script.
+        no-cors prevents the browser from reading Google's response.
+        Therefore, this page must not claim that the spreadsheet
+        definitely received the enquiry.
+      */
+      const body = new URLSearchParams();
+
+      for (const [key, value] of formData.entries()) {
+        body.append(key, value);
+      }
 
       try {
-        // Apps Script receives URL-encoded form fields.
-        // no-cors prevents the browser from reading Google's response,
-        // so this page cannot confirm that a row was written to Sheets.
-        const body = new URLSearchParams();
-        for (const [key, value] of data.entries()) {
-          body.append(key, value);
-        }
-
         await fetch(GOOGLE_SCRIPT_URL, {
           method: "POST",
           mode: "no-cors",
@@ -897,34 +1167,26 @@
         });
 
         showStatus(
-          "Your request has been sent to the online tracker. Because the browser cannot confirm Google's response, please check the Enquiries tab in your spreadsheet before relying on this submission. If no new row appears, send the request through WhatsApp below.",
-          "success"
+          "Your enquiry was sent to Google for processing, but this page cannot confirm whether it was saved. Please check the Enquiries tab in your Google Sheet before relying on this submission. If no new row appears, contact us on WhatsApp below.",
+          "info"
         );
 
-        whatsappBackup.href =
-          "https://wa.me/27814799675?text=" +
-          encodeURIComponent(makeWhatsAppMessage(data));
-        whatsappBackup.style.display = "inline-flex";
-
-        form.reset();
-
+        /*
+          Keep the entered details in the form until the spreadsheet
+          row has been verified. The customer can retry or use WhatsApp.
+        */
       } catch (error) {
         showStatus(
-          "We could not confirm that your request reached the online tracker. Please send it through WhatsApp as a backup.",
+          "We could not send the enquiry from this page. Please contact HydroSpring Waters on WhatsApp at +27 81 479 9675.",
           "error"
         );
-
-        whatsappBackup.href =
-          "https://wa.me/27814799675?text=" +
-          encodeURIComponent(makeWhatsAppMessage(data));
-        whatsappBackup.style.display = "inline-flex";
-
       } finally {
         submitButton.disabled = false;
-        submitButton.textContent = "Submit Request";
+        submitButton.textContent = originalButtonText;
       }
     });
   </script>
+
 </body>
 </html>
 
