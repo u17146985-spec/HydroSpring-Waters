@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://u17146985-spec.github.io/HydroSpring-Waters/sitemap.xml
